@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Optimizer</title>
+</head>
+<body>
+    <h1>Image Optimization Helper</h1>
+    <p>To optimize the large images (especially the 3.7MB hero image), we need to:</p>
+    
+    <h2>Immediate Solutions:</h2>
+    <ol>
+        <li><strong>Resize Hero Image:</strong> The "Delightful Bean Coffee Cart.png" (3.7MB) should be max 800px wide, compressed to ~200KB</li>
+        <li><strong>Convert to WebP:</strong> WebP format can reduce file size by 25-35%</li>
+        <li><strong>Progressive JPEG:</strong> For JPEGs, use progressive encoding</li>
+        <li><strong>Image Dimensions:</strong> Match actual display size</li>
+    </ol>
+
+    <h2>Current Image Issues:</h2>
+    <ul>
+        <li>Delightful Bean Coffee Cart.png: 3.7MB (should be ~200KB)</li>
+        <li>Esspresso.jpg: 1.9MB (should be ~100KB)</li>
+        <li>Coffee Cup.jpg: 1.4MB (should be ~80KB)</li>
+        <li>Cart Decor.jpg: 943KB (should be ~60KB)</li>
+    </ul>
+
+    <h2>Tools for Optimization:</h2>
+    <p>Use these online tools:</p>
+    <ul>
+        <li><a href="https://tinypng.com">TinyPNG</a> - PNG/JPEG compression</li>
+        <li><a href="https://squoosh.app">Squoosh</a> - WebP conversion</li>
+        <li><a href="https://imagecompressor.com">ImageCompressor</a> - Batch optimization</li>
+    </ul>
+
+    <script>
+        // Image loading performance
+        const images = document.querySelectorAll('img');
+        images.forEach(img => {
+            img.addEventListener('load', () => {
+                console.log(`Image loaded: ${img.src}`);
+            });
+        });
+    </script>
+</body>
+</html>
