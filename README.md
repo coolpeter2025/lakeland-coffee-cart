@@ -8,7 +8,7 @@
 - Mobile-responsive design
 
 ## 🌐 Live Site
-Visit: https://www.lakelandcoffeecart.com
+Visit: https://www.lakelandcoffeecart.fyi
 
 ## 📊 Features
 - SEO optimized with structured data
